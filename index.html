@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oxyniti — Infinite Oxygen. Infinite Yield. | Nano-Bubble Aeration for Fish Farms</title>
+  <meta name="description" content="Oxyniti nano-bubble generators supercharge dissolved oxygen in fish ponds — healthier fish, faster growth, higher yield. Built for South Indian aquaculture." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&family=Catamaran:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════ PRELOADER ═══════════ -->
+  <div id="preloader" aria-hidden="true">
+    <div>
+      <img class="pre-mark" src="assets/logo.svg" alt="" />
+      <div class="pre-word">Oxyniti</div>
+    </div>
+  </div>
+
+  <!-- ═══════════ NAV ═══════════ -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Oxyniti home">
+        <img src="assets/logo.svg" alt="Oxyniti logo" />
+        <span>
+          <span class="brand-word">oxy<em>niti</em></span>
+          <span class="brand-tag">Nano-bubble aeration</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#problem">Why Oxygen</a></li>
+        <li><a href="#tech">Technology</a></li>
+        <li><a href="#sky">Sky View</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#gallery">Field Footage</a></li>
+        <li><a href="#roi">Your Profit</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn btn-warm btn-sm nav-cta" href="#contact">Book Free Demo</a>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="top">
+    <div class="hero-media">
+      <video autoplay muted loop playsinline poster="assets/img/hero-poster.jpg">
+        <source src="assets/video/hero.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <canvas id="bubble-canvas" aria-hidden="true"></canvas>
+
+    <div class="container hero-content">
+      <span class="hero-kicker tamil">வணக்கம், மீன் வளர்ப்பாளர்களே! 🐟</span>
+      <h1>Infinite <span class="grad-text">Oxygen</span>.<br />Infinite <span class="warm-text">Yield</span>.</h1>
+      <p class="hero-sub">
+        Oxyniti's nano-bubble generator floods your pond with trillions of
+        invisible oxygen bubbles that stay dissolved for days — not seconds.
+        Healthier fish, faster growth, bigger harvests.
+        <span class="tamil">நல்ல நீர். நல்ல மீன். நல்ல லாபம்.</span>
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-warm" href="#contact">Book a Free Pond Demo</a>
+        <a class="btn btn-ghost" href="#sky">▶&nbsp; Watch it work</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num">2×</div><div class="lbl">More dissolved oxygen*</div></div>
+        <div class="hero-stat"><div class="num">&lt;200nm</div><div class="lbl">Bubble size — stays for days</div></div>
+        <div class="hero-stat"><div class="num">1 Day</div><div class="lbl">Install — fits any pond</div></div>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <div class="wheel"><i></i></div>
+      <span>Dive in</span>
+    </div>
+  </section>
+
+  <!-- ═══════════ MARQUEE ═══════════ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>
+        அதிக ஆக்ஸிஜன் <i>◦</i> Faster Growth <i>◦</i> அதிக மகசூல் <i>◦</i> Better FCR <i>◦</i>
+        ஆரோக்கியமான மீன்கள் <i>◦</i> Higher Survival <i>◦</i> குறைந்த தீவனச் செலவு <i>◦</i> More Profit <i>◦</i>
+      </span>
+      <span>
+        அதிக ஆக்ஸிஜன் <i>◦</i> Faster Growth <i>◦</i> அதிக மகசூல் <i>◦</i> Better FCR <i>◦</i>
+        ஆரோக்கியமான மீன்கள் <i>◦</i> Higher Survival <i>◦</i> குறைந்த தீவனச் செலவு <i>◦</i> More Profit <i>◦</i>
+      </span>
+    </div>
+  </div>
+
+  <!-- ═══════════ PROBLEM ═══════════ -->
+  <section class="problem light" id="problem">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">The 4 AM problem</span>
+        <h2>Low oxygen is the silent killer in every pond.</h2>
+        <p>Every night, while you sleep, dissolved oxygen in your pond crashes.
+           Fish stop eating, stop growing — and on a bad night, you lose the whole crop.</p>
+      </div>
+      <div class="problem-grid">
+        <article class="p-card reveal">
+          <div class="ico">🌙</div>
+          <h3>Night-time DO crash</h3>
+          <p>After sunset, algae stop making oxygen and start consuming it.
+             By 4 AM, DO can fall below 2 mg/L — the danger zone for every farmed species.</p>
+          <span class="tamil-note">இரவில் ஆக்ஸிஜன் வீழ்ச்சி</span>
+        </article>
+        <article class="p-card reveal" data-delay="1">
+          <div class="ico">🐌</div>
+          <h3>Stunted growth, wasted feed</h3>
+          <p>Fish under oxygen stress digest poorly. Feed conversion worsens,
+             growth slows, and your biggest cost — feed — goes to waste.</p>
+          <span class="tamil-note">தீவனம் வீண், வளர்ச்சி மந்தம்</span>
+        </article>
+        <article class="p-card reveal" data-delay="2">
+          <div class="ico">⚠️</div>
+          <h3>One bad night = total loss</h3>
+          <p>A single severe DO crash can wipe out months of investment in hours.
+             Paddle wheels churn the surface, but oxygen escapes as fast as it enters.</p>
+          <span class="tamil-note">ஒரு இரவில் முழு இழப்பு</span>
+        </article>
+      </div>
+
+      <div class="do-curve-wrap reveal">
+        <h3>Dissolved oxygen over 24 hours</h3>
+        <p class="sub">Typical pond vs an Oxyniti-aerated pond (illustrative)</p>
+        <svg class="do-svg" viewBox="0 0 800 260" role="img" aria-label="Graph: dissolved oxygen dips dangerously at night in a typical pond, stays high with Oxyniti">
+          <line x1="50" y1="20" x2="50" y2="220" stroke="rgba(11,46,51,0.15)" stroke-width="1.5"/>
+          <line x1="50" y1="220" x2="780" y2="220" stroke="rgba(11,46,51,0.15)" stroke-width="1.5"/>
+          <rect x="50" y="170" width="730" height="50" fill="rgba(226,69,44,0.07)"/>
+          <line x1="50" y1="170" x2="780" y2="170" stroke="#e2452c" stroke-width="1" stroke-dasharray="6 6" opacity="0.5"/>
+          <text class="danger-lbl" x="58" y="188">Danger zone &lt; 3 mg/L</text>
+          <text class="axis-lbl" x="10" y="30">DO</text>
+          <text class="axis-lbl" x="46" y="238" text-anchor="middle">6 PM</text>
+          <text class="axis-lbl" x="235" y="238" text-anchor="middle">12 AM</text>
+          <text class="axis-lbl" x="420" y="238" text-anchor="middle">4 AM</text>
+          <text class="axis-lbl" x="600" y="238" text-anchor="middle">10 AM</text>
+          <text class="axis-lbl" x="770" y="238" text-anchor="middle">6 PM</text>
+          <!-- typical pond: dips deep into danger at 4AM -->
+          <path class="do-path" d="M 50 70 C 150 85, 220 130, 300 165 C 360 190, 400 205, 430 200 C 480 190, 560 120, 640 85 C 700 62, 750 58, 780 62"/>
+          <!-- oxyniti pond: high and stable -->
+          <path class="do-path oxy" d="M 50 55 C 160 60, 260 74, 400 78 C 540 82, 660 62, 780 52"/>
+          <text class="oxy-lbl" x="600" y="45">With Oxyniti</text>
+          <text class="danger-lbl" x="330" y="215">Typical pond</text>
+        </svg>
+        <div class="legend">
+          <span><i style="background:#e2452c"></i> Typical pond</span>
+          <span><i style="background:#0fbfae"></i> With Oxyniti nano-bubbles</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ TECHNOLOGY ═══════════ -->
+  <section class="tech" id="tech">
+    <div class="container tech-grid">
+      <div class="tanks reveal" aria-hidden="true">
+        <div class="tank regular">
+          <div class="label"><b>Normal aerator</b><span>mm bubbles</span></div>
+          <div class="surface"></div>
+          <div class="bubble-layer"></div>
+          <div class="verdict">Big bubbles rise &amp; burst in seconds — most oxygen escapes to the air.</div>
+        </div>
+        <div class="tank nano">
+          <div class="label"><b>Oxyniti nano</b><span>&lt;200 nm</span></div>
+          <div class="surface"></div>
+          <div class="bubble-layer"></div>
+          <div class="verdict">Nano-bubbles are neutrally buoyant — they hang in the water and keep dissolving for days.</div>
+        </div>
+      </div>
+      <div class="tech-copy">
+        <span class="kicker reveal">The science, simply</span>
+        <h2 class="reveal">Bubbles so small,<br /><span class="grad-text">they never leave the water.</span></h2>
+        <p class="reveal">A paddle wheel splashes oxygen in; physics takes it right back out.
+           Oxyniti shears air into bubbles thousands of times thinner than a human hair.
+           At that size they stop rising, stay suspended, and transfer oxygen with
+           near-total efficiency — day and night.</p>
+        <div class="tech-feats">
+          <div class="tf reveal"><span class="n">1</span>
+            <div><h4>Draw &amp; shear</h4><p>The unit draws pond water and injects air through a nano-shear chamber, generating trillions of &lt;200 nm bubbles.</p></div>
+          </div>
+          <div class="tf reveal" data-delay="1"><span class="n">2</span>
+            <div><h4>Infuse the whole pond</h4><p>The milky nano-bubble plume spreads through the water column — not just the surface — raising DO everywhere fish live.</p></div>
+          </div>
+          <div class="tf reveal" data-delay="2"><span class="n">3</span>
+            <div><h4>Hold it for days</h4><p>Neutral buoyancy and negative surface charge keep bubbles suspended, buffering your pond through the dangerous night hours.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SKY VIEW / DRONE ═══════════ -->
+  <section class="sky" id="sky">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="sky-tamil">வானிலிருந்து பாருங்கள் 🚁</span>
+        <h2>Watch a pond <span class="grad-text">come alive</span> — from the sky.</h2>
+        <p>Real footage from a live Oxyniti trial. Two units, one working pond —
+           the milky plumes you see are pure oxygen going into solution.</p>
+      </div>
+      <div class="drone-stage reveal">
+        <video autoplay muted loop playsinline poster="assets/img/drone-poster.jpg">
+          <source src="assets/video/drone.mp4" type="video/mp4" />
+        </video>
+        <div class="rec-badge"><i></i>DRONE&nbsp;·&nbsp;LIVE TRIAL</div>
+        <div class="drone-hud">
+          <div class="hud-frame"></div>
+          <div class="hud-chip c1"><span class="dot"></span>Unit 1 · nano-plume active</div>
+          <div class="hud-chip c2"><span class="dot"></span>DO rising across pond</div>
+          <div class="hud-chip c3"><span class="dot"></span>Field trial · South India</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ RESULTS ═══════════ -->
+  <section class="results" id="results">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">What it means for your harvest</span>
+        <h2>Oxygen is the cheapest growth promoter ever made.</h2>
+      </div>
+      <div class="results-grid">
+        <div class="r-card reveal">
+          <div class="big"><span data-count="2">0</span><span class="unit">×</span></div>
+          <div class="cap">Dissolved oxygen uplift</div>
+          <div class="tam tamil">இரட்டிப்பு ஆக்ஸிஜன்</div>
+        </div>
+        <div class="r-card reveal" data-delay="1">
+          <div class="big">+<span data-count="15">0</span><span class="unit">%</span></div>
+          <div class="cap">Higher survival rate</div>
+          <div class="tam tamil">அதிக உயிர்ப்பு விகிதம்</div>
+        </div>
+        <div class="r-card reveal" data-delay="2">
+          <div class="big">−<span data-count="15">0</span><span class="unit">%</span></div>
+          <div class="cap">Feed conversion ratio</div>
+          <div class="tam tamil">குறைந்த தீவனச் செலவு</div>
+        </div>
+        <div class="r-card reveal" data-delay="3">
+          <div class="big">+<span data-count="30">0</span><span class="unit">%</span></div>
+          <div class="cap">Stocking density potential</div>
+          <div class="tam tamil">அதிக மீன் அடர்த்தி</div>
+        </div>
+      </div>
+      <p class="fineprint reveal">*Figures are typical ranges reported in published nano-bubble
+         aquaculture studies and field trials; results vary with species, pond condition and
+         management. We prove it on <b>your</b> pond with a free DO-meter demo before you pay anything.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════ GALLERY ═══════════ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Field footage</span>
+        <h2>No studio. No CGI. <span class="grad-text">Just working ponds.</span></h2>
+        <p>Tap any clip to play — everything below was shot on real farms during live trials.</p>
+      </div>
+      <div class="g-grid">
+        <div class="g-card g-1 reveal">
+          <video muted loop playsinline preload="metadata" src="assets/video/plume-portrait.mp4"></video>
+          <div class="play"><i>▶</i></div>
+          <div class="cap">The nano-plume — oxygen dissolving in real time</div>
+        </div>
+        <div class="g-card g-2 reveal" data-delay="1">
+          <video muted loop playsinline preload="metadata" src="assets/video/paddle.mp4"></video>
+          <div class="play"><i>▶</i></div>
+          <div class="cap">Side by side: paddle wheel splash vs silent nano-diffusion</div>
+        </div>
+        <div class="g-card g-3 reveal">
+          <video muted loop playsinline preload="metadata" src="assets/video/device.mp4"></video>
+          <div class="play"><i>▶</i></div>
+          <div class="cap">The unit up close — simple plumbing, standard power</div>
+        </div>
+        <div class="g-card g-4 reveal" data-delay="1">
+          <video muted loop playsinline preload="metadata" src="assets/video/flowmeter.mp4"></video>
+          <div class="play"><i>▶</i></div>
+          <div class="cap">Calibrated air-flow metering on every unit</div>
+        </div>
+        <div class="g-card g-5 reveal">
+          <video muted loop playsinline preload="metadata" src="assets/video/pond-portrait.mp4"></video>
+          <div class="play"><i>▶</i></div>
+          <div class="cap">Whole-pond infusion — the plume travels far beyond the nozzle</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SPECIES ═══════════ -->
+  <section class="species">
+    <div class="container">
+      <div class="species-band reveal">
+        <div>
+          <h3>Built for every South Indian farm.</h3>
+          <span class="tam tamil">உங்கள் குளத்திற்கு புதிய மூச்சு</span>
+        </div>
+        <div class="chips">
+          <span class="chip">🐟 Tilapia / GIFT</span>
+          <span class="chip">🐍 Murrel (Viral)</span>
+          <span class="chip">🐋 Pangasius</span>
+          <span class="chip">🦐 Freshwater Prawn</span>
+          <span class="chip">🎏 Carp Polyculture</span>
+          <span class="chip">🧪 Biofloc &amp; RAS</span>
+          <span class="chip">🌊 Any pond, 1-day install</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ROI ═══════════ -->
+  <section class="roi" id="roi">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">உங்கள் லாபம் · Your profit</span>
+        <h2>Slide to see what more oxygen is worth.</h2>
+      </div>
+      <div class="roi-card reveal">
+        <div class="roi-left">
+          <h3>Your pond</h3>
+          <p class="sub">Move the sliders — estimates update instantly.</p>
+          <div class="slider-row">
+            <div class="row-head"><label for="roi-acres">Pond size</label><output id="roi-acres-out">1 acre</output></div>
+            <input type="range" id="roi-acres" min="0.5" max="5" step="0.5" value="1" />
+          </div>
+          <div class="slider-row">
+            <div class="row-head"><label for="roi-price">Farm-gate price</label><output id="roi-price-out">₹120/kg</output></div>
+            <input type="range" id="roi-price" min="80" max="400" step="10" value="120" />
+          </div>
+        </div>
+        <div class="roi-right">
+          <span class="lbl">Estimated extra harvest</span>
+          <div class="kg" id="roi-kg">+500 – 750 kg / year</div>
+          <hr />
+          <span class="lbl">Estimated extra revenue</span>
+          <div class="value" id="roi-money">₹60,000 – ₹90,000</div>
+          <p class="note">Illustrative only — assumes a semi-intensive baseline of
+             ~2,500 kg/acre/year and a 20–30% yield uplift from improved DO, survival and FCR
+             (range reported in published nano-bubble aquaculture studies).
+             We validate real numbers on your pond during the free demo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="kicker reveal">Book your free demo</span>
+        <h2 class="reveal">We bring the unit.<br />You bring the pond.<br /><span class="grad-text">The DO meter decides.</span></h2>
+        <p class="reveal">Our team installs an Oxyniti unit on your pond, measures dissolved
+           oxygen before and after with a calibrated meter, and shows you the difference
+           the same day. No obligation.</p>
+        <div class="c-rails">
+          <a class="c-rail reveal" href="#" data-contact="phone">
+            <span class="ico">📞</span>
+            <span><b>Call us</b><span>+91 XXXXX XXXXX — placeholder</span></span>
+          </a>
+          <a class="c-rail reveal" data-delay="1" href="#" data-contact="whatsapp">
+            <span class="ico">💬</span>
+            <span><b>WhatsApp in Tamil or English</b><span>தமிழில் பேசலாம் — placeholder</span></span>
+          </a>
+          <a class="c-rail reveal" data-delay="2" href="#" data-contact="email">
+            <span class="ico">📍</span>
+            <span><b>Serving Tamil Nadu &amp; South India</b><span>Pilot territory: Tiruchirappalli region</span></span>
+          </a>
+        </div>
+      </div>
+      <form class="form-card reveal" id="lead-form">
+        <div class="form-grid">
+          <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" required placeholder="e.g. Murugan" /></div>
+          <div class="field"><label for="f-phone">Phone / WhatsApp</label><input id="f-phone" name="phone" type="tel" required placeholder="+91 ..." /></div>
+          <div class="field"><label for="f-place">Village / Town</label><input id="f-place" name="place" required placeholder="e.g. Lalgudi, Trichy" /></div>
+          <div class="field"><label for="f-size">Pond size</label>
+            <select id="f-size" name="size">
+              <option>Under ½ acre</option>
+              <option selected>½ – 1 acre</option>
+              <option>1 – 3 acres</option>
+              <option>3+ acres / multiple ponds</option>
+            </select>
+          </div>
+          <div class="field full"><label for="f-species">What do you farm?</label>
+            <select id="f-species" name="species">
+              <option selected>Tilapia / GIFT</option>
+              <option>Murrel (Viral meen)</option>
+              <option>Pangasius</option>
+              <option>Freshwater prawn</option>
+              <option>Carp polyculture</option>
+              <option>Biofloc / RAS</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-warm" type="submit">Request Free Pond Demo →</button>
+        <p class="form-note">Sends your details straight to our team on WhatsApp. No spam, ever.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a class="brand" href="#top">
+            <img src="assets/logo.svg" alt="Oxyniti logo" />
+            <span>
+              <span class="brand-word">oxy<em>niti</em></span>
+              <span class="brand-tag">Infinite Oxygen. Infinite Yield.</span>
+            </span>
+          </a>
+          <p>Nano-bubble aeration engineered for South Indian aquaculture.
+             Prove it on your pond before you spend a rupee.</p>
+          <div class="foot-tamil">நல்ல நீர். நல்ல மீன். நல்ல லாபம்.</div>
+        </div>
+        <div class="foot-links">
+          <div>
+            <h5>Explore</h5>
+            <ul>
+              <li><a href="#tech">Technology</a></li>
+              <li><a href="#sky">Sky view</a></li>
+              <li><a href="#results">Results</a></li>
+              <li><a href="#gallery">Field footage</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Farmers</h5>
+            <ul>
+              <li><a href="#roi">Profit calculator</a></li>
+              <li><a href="#contact">Free demo</a></li>
+              <li><a href="#problem">Why oxygen</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="foot-base">
+        <span>© <span id="year"></span> Oxyniti. All rights reserved.</span>
+        <span>Made with 💙 for the farmers of South India</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
