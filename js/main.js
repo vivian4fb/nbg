@@ -302,19 +302,22 @@ document.querySelectorAll(".g-card").forEach(card => {
     input.style.setProperty("--fill", p + "%");
   }
 
+  const t = (k, def) => (typeof window.T === "function" ? window.T(k, def) : def);
+
   function update() {
     paintFill(acres); paintFill(price);
     const a = parseFloat(acres.value);
     const pr = parseInt(price.value, 10);
-    acresOut.textContent = a + (a === 1 ? " acre" : " acres");
-    priceOut.textContent = fmtINR(pr) + "/kg";
+    acresOut.textContent = a + " " + (a === 1 ? t("roi.acre", "acre") : t("roi.acres", "acres"));
+    priceOut.textContent = fmtINR(pr) + t("roi.perkg", "/kg");
     const lo = a * BASE_YIELD_KG_PER_ACRE * UPLIFT_LO;
     const hi = a * BASE_YIELD_KG_PER_ACRE * UPLIFT_HI;
-    kgOut.textContent = `+${Math.round(lo).toLocaleString("en-IN")} – ${Math.round(hi).toLocaleString("en-IN")} kg / year`;
+    kgOut.textContent = `+${Math.round(lo).toLocaleString("en-IN")} – ${Math.round(hi).toLocaleString("en-IN")} ${t("roi.kgyr", "kg / year")}`;
     moneyOut.textContent = `${fmtINR(lo * pr)} – ${fmtINR(hi * pr)}`;
   }
   acres.addEventListener("input", update);
   price.addEventListener("input", update);
+  document.addEventListener("langchange", update);
   update();
 })();
 
