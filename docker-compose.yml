@@ -1,0 +1,8 @@
+services:
+  oxyniti-web:
+    build: .
+    image: oxyniti-website:latest
+    container_name: oxyniti-web
+    ports:
+      - "8080:80"
+    restart: unless-stopped
