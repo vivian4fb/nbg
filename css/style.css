@@ -555,9 +555,8 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.12; }
    ============================================================ */
 .gallery { padding: 120px 0; }
 .g-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 18px;
+  display: flex;
+  justify-content: center;
 }
 .g-card {
   position: relative; border-radius: var(--radius); overflow: hidden;
@@ -587,11 +586,7 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.12; }
   padding-left: 4px;
 }
 .g-card.playing .play { opacity: 0; }
-.g-1 { grid-column: span 5; aspect-ratio: 3/4; }
-.g-2 { grid-column: span 7; aspect-ratio: 16/10; }
-.g-3 { grid-column: span 7; aspect-ratio: 16/10; }
-.g-4 { grid-column: span 5; aspect-ratio: 3/4; }
-.g-5 { grid-column: span 12; aspect-ratio: 21/9; }
+.g-1 { width: min(480px, 100%); aspect-ratio: 3/4; }
 
 /* ============================================================
    SPECIES
@@ -814,9 +809,7 @@ html:not([lang="en"]) .section-head h2 { font-size: clamp(1.7rem, 3.4vw, 2.6rem)
   .problem-grid { grid-template-columns: 1fr; }
   .tanks { grid-template-columns: 1fr 1fr; }
   .tank { height: 300px; }
-  .g-1, .g-2, .g-3, .g-4, .g-5 { grid-column: span 12; }
-  .g-1, .g-4 { aspect-ratio: 4/5; }
-  .g-5 { aspect-ratio: 16/10; }
+  .g-1 { width: 100%; aspect-ratio: 4/5; }
   .form-grid { grid-template-columns: 1fr; }
   .drone-stage { aspect-ratio: 4 / 5; }
   .hud-chip.c2 { display: none; }
